@@ -113,6 +113,20 @@ button {
 /* col-2-2 styles */
 .col-2-2 {
   background-color: #4ABEBC;
+  color: #DBFDFC;
+
+}
+.col-2-2 h1 {
+font-weight: 500;
+}
+
+.col-2-2 p {
+  color: #b1efee;
+  font-weight: 400;
+  font-size: .7rem;
+  letter-spacing: .01rem;
+  line-height: 1.1rem;
+  width: 60%
 }
 
 /*********** GRID CONTAINER STYLES ***********/
@@ -184,6 +198,14 @@ button {
   .col-1-1 p {
     font-size: .8rem;
     margin-bottom: 25px;
+  }
+
+  .col-2-2 h1 {
+    font-size: .95rem;
+    margin-bottom: 14px;
+  }
+  .col-2-2 p {
+    width: 62%;
   }
 }
 
