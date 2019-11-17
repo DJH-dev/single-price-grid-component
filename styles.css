@@ -101,11 +101,12 @@ button {
   font-size: .84rem;
   height: 42px;
   width: 232px;
-  transition: transform 2s;
+  transition: 250ms;
 }
 
 .action-button:hover {
   background-color: #adc930;
+  box-shadow: none;
   cursor: pointer;
 }
 
