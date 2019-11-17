@@ -1,0 +1,104 @@
+/*********** GLOBAL STYLES ***********/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  height: 100vh;
+  overflow: auto;
+}
+
+/* body defaults */
+body {
+  background-color: #e6eff6;
+  font-family: 'Public Sans', sans-serif;
+  height: 100vh;
+  overflow: auto;
+}
+
+/* global resets */
+html,
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/*********** GLOBAL CONTAINER STYLES ***********/
+.grid-container {
+  margin: 53px auto 0;
+}
+
+/*********** COL GLOBAL STYLES ***********/
+[class*="col"] {
+  padding: 26px 20px 0;
+}
+
+/* col-1-2 styles */
+.col-1-2 {
+  background-color: #FFFFFF;
+  border-radius: 5px 5px 0 0;
+}
+.col-1-2 h1 {
+  color: #5eaba6;
+  font-weight: 600;
+}
+
+.col-1-2 h2 {
+  color: #DCEC79;
+  font-weight: 700;
+}
+
+.col-1-2 p {
+  color: #c4c7cf;
+}
+
+/* col-1-1 styles */
+.col-1-1 {
+  background-color: #2bb3b0;
+}
+
+/* col-2-2 styles */
+.col-2-2 {
+  background-color: #4ABEBC;
+  border-radius: 0 0 5px 5px;
+}
+
+/*********** GRID CONTAINER STYLES ***********/
+/** FOR MOBILE FIRST DESIGN **/
+@media(max-width: 767px) {
+  .grid-container {
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 237px 1fr 1fr;
+    height: 639px;
+    /* margin: 0 auto; */
+    width: 276px;
+  }
+
+  .col-1-2 h1 {
+    font-size: 1rem;
+    letter-spacing: .7px;
+    margin-bottom: 20px;
+  }
+
+  .col-1-2 h2 {
+    font-size: .82rem;
+    line-height: 1rem;
+    margin-bottom: 19px;
+  }
+
+  .col-1-2 p {
+    font-size: .76rem;
+    line-height: 1.5rem;
+  }
+}
+
+/** FOR TABLET SCREENS **/
+@media(min-width: 768px) and (max-width: 991px) {}
+
+/** FOR DESKTOP SCREENS **/
+@media(min-width: 992px) {}
