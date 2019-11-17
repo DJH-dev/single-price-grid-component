@@ -29,19 +29,21 @@ p {
 
 /*********** GLOBAL CONTAINER STYLES ***********/
 .grid-container {
-  margin: 53px auto 0;
+  margin: 53px auto 40px;
 }
 
 /*********** COL GLOBAL STYLES ***********/
 [class*="col"] {
+  display: flex;
+  flex-direction: column;
   padding: 26px 20px 0;
 }
 
 /* col-1-2 styles */
 .col-1-2 {
   background-color: #FFFFFF;
-  border-radius: 5px 5px 0 0;
 }
+
 .col-1-2 h1 {
   color: #5eaba6;
   font-weight: 600;
@@ -57,14 +59,44 @@ p {
 }
 
 /* col-1-1 styles */
-.col-1-1 {
+.col-1-1, .subscription-price {
   background-color: #2bb3b0;
+  color: #f5ffff;
 }
+
+.col-1-1 h1 {
+  font-weight: 500;
+}
+
+.price-tag {
+  display: grid;
+  grid-template-columns: 0 auto;
+  justify-items: start;
+}
+
+.col-1-1 h2 {
+  align-self: center;
+  color: #5ACDCB;
+  font-weight: 400;
+  grid-column: 2/3;
+}
+
+.subscription-price {
+  grid-column: 1/2;
+}
+
+.col-1-1 p {
+  color: #b1efee;
+}
+
+.action-button {
+
+}
+
 
 /* col-2-2 styles */
 .col-2-2 {
   background-color: #4ABEBC;
-  border-radius: 0 0 5px 5px;
 }
 
 /*********** GRID CONTAINER STYLES ***********/
@@ -75,13 +107,22 @@ p {
     display: grid;
     grid-template-rows: 237px 1fr 1fr;
     height: 639px;
-    /* margin: 0 auto; */
     width: 276px;
+  }
+
+  .col-1-2 h1,
+  .col-1-1 h1,
+  .col-2-2 h1 {
+    letter-spacing: .6px;
+  }
+
+  /* col-1-2 styles */
+  .col-1-2 {
+    border-radius: 5px 5px 0 0;
   }
 
   .col-1-2 h1 {
     font-size: 1rem;
-    letter-spacing: .7px;
     margin-bottom: 20px;
   }
 
@@ -94,6 +135,35 @@ p {
   .col-1-2 p {
     font-size: .76rem;
     line-height: 1.5rem;
+  }
+
+  .col-2-2 {
+    border-radius: 0 0 5px 5px;
+  }
+
+  /* col-1-1 styles */
+  .col-1-1 h1 {
+    font-size: 1rem;
+    margin-bottom: 18px;
+  }
+
+  .price-tag {
+    margin-bottom: 15px;
+  }
+
+  .col-1-1 h2 {
+    font-size: .9rem;
+    margin-left: 65px;
+  }
+
+  .subscription-price {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+
+  .col-1-1 p {
+    font-size: .9rem;
+    margin-bottom: 25px;
   }
 }
 
